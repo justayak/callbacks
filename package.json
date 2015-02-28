@@ -1,0 +1,22 @@
+{
+  "name": "callbacks",
+  "version": "0.0.1",
+  "description": "Simple callback helper",
+  "main": "lib/callbacks.js",
+  "scripts": {
+    "test": "jasmine-node spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/justayak/callbacks.git"
+  },
+  "keywords": [
+    "callback"
+  ],
+  "author": "Julian",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/justayak/callbacks/issues"
+  },
+  "homepage": "https://github.com/justayak/callbacks"
+}
