@@ -20,9 +20,21 @@
             return future;
         }
 
+        function test2() {
+            var future = Future.create();
+            setTimeout(function () {
+                future.execFailure("d", "E", 3);
+            }, 1000);
+            return future;
+        }
+
         test1().success(function (a, b, c) {
             console.log(a + ' ' + b + ' ' + c);
-        })
+        });
+
+        test2().failure(function (a, b, c) {
+            console.log(a + ' ' + b + ' ' + c);
+        });
 
 
     });

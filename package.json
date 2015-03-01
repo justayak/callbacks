@@ -1,6 +1,6 @@
 {
-  "name": "callbacks",
-  "version": "0.0.1",
+  "name": "future-callbacks",
+  "version": "0.0.2",
   "description": "Simple callback helper",
   "main": "lib/callbacks.js",
   "scripts": {
