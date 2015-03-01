@@ -12,9 +12,8 @@
 <script>
     $(function () {
 
-
         function test1() {
-            var future = new Future();
+            var future = Future.create();
             setTimeout(function () {
                 future.execSuccess("a", "B", 2);
             }, 1000);

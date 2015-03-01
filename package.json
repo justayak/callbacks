@@ -5,7 +5,8 @@
   "main": "lib/callbacks.js",
   "scripts": {
     "test": "jasmine-node spec",
-    "debug": "browserify lib/future.js --debug --s Future > build/callbacks.bundle.debug.js"
+    "debug": "browserify lib/future.js --debug --s Future > build/callbacks.bundle.debug.js",
+    "build": "browserify lib/future.js --s Future | uglifyjs > build/callbacks.bundle.js"
   },
   "repository": {
     "type": "git",
