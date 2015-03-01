@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <script src="build/callbacks.bundle.debug.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <title>callbacks</title>
+</head>
+<body>
+
+</body>
+<script>
+    $(function () {
+
+
+        function test1() {
+            var future = new Future();
+            setTimeout(function () {
+                future.execSuccess("a", "B", 2);
+            }, 1000);
+            return future;
+        }
+
+        test1().success(function (a, b, c) {
+            console.log(a + ' ' + b + ' ' + c);
+        })
+
+
+    });
+
+</script>
+</html>

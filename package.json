@@ -4,7 +4,8 @@
   "description": "Simple callback helper",
   "main": "lib/callbacks.js",
   "scripts": {
-    "test": "jasmine-node spec"
+    "test": "jasmine-node spec",
+    "debug": "browserify lib/future.js --debug --s Future > build/callbacks.bundle.debug.js"
   },
   "repository": {
     "type": "git",
