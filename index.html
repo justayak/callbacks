@@ -48,6 +48,26 @@
             return future;
         }
 
+        function test4() {
+            var future = Future.create({}, 5, 1000);
+            setTimeout(function () {
+                future.execSuccess();
+            }, 100);
+            setTimeout(function () {
+                future.execSuccess();
+            }, 200);
+            setTimeout(function () {
+                future.execSuccess();
+            }, 300);
+            setTimeout(function () {
+                future.execSuccess();
+            }, 400);
+            setTimeout(function () {
+                future.execSuccess();
+            }, 500);
+            return future;
+        }
+
         test1().success(function (a, b, c) {
             console.log(a + ' ' + b + ' ' + c);
         }).finally(function () {
@@ -64,6 +84,12 @@
             console.log("succ");
         }).finally(5, 1000, function () {
             console.log('finally');
+        });
+
+        test4().success(function () {
+            console.log('succ4');
+        }).finally(function () {
+            console.log('finally4');
         });
 
     });
