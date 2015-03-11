@@ -1,8 +1,8 @@
 {
   "name": "future-callbacks",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Simple callback helper",
-  "main": "lib/callbacks.js",
+  "main": "lib/future.js",
   "scripts": {
     "test": "jasmine-node spec",
     "debug": "browserify lib/future.js --debug --s Future > build/callbacks.bundle.debug.js",
