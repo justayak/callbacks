@@ -12,6 +12,16 @@
 <script>
     $(function () {
 
+        function test0() {
+            var future = Future.create();
+            future.execSuccess("hello");
+            return future;
+        }
+
+        test0().success(function (hello) {
+            console.log(hello);
+        });
+
         function test1() {
             var future = Future.create();
             setTimeout(function () {
